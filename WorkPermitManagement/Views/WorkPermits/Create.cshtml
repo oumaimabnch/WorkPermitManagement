@@ -1,0 +1,283 @@
+﻿@model WorkPermitManagement.Models.WorkPermit
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>WorkPermit</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CODE_CONT" class="control-label"></label>
+                <input asp-for="CODE_CONT" class="form-control" />
+                <span asp-validation-for="CODE_CONT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CODE_DEM" class="control-label"></label>
+                <input asp-for="CODE_DEM" class="form-control" />
+                <span asp-validation-for="CODE_DEM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CODE_REGIME" class="control-label"></label>
+                <input asp-for="CODE_REGIME" class="form-control" />
+                <span asp-validation-for="CODE_REGIME" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CODE_AVANT" class="control-label"></label>
+                <input asp-for="CODE_AVANT" class="form-control" />
+                <span asp-validation-for="CODE_AVANT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_CODE_CONTRAT" class="control-label"></label>
+                <input asp-for="CONT_CODE_CONTRAT" class="form-control" />
+                <span asp-validation-for="CONT_CODE_CONTRAT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_NATURE_CONTRAT" class="control-label"></label>
+                <input asp-for="CONT_NATURE_CONTRAT" class="form-control" />
+                <span asp-validation-for="CONT_NATURE_CONTRAT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_DATE_DEBUT" class="control-label"></label>
+                <input asp-for="CONT_DATE_DEBUT" class="form-control" />
+                <span asp-validation-for="CONT_DATE_DEBUT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_DATE_FIN" class="control-label"></label>
+                <input asp-for="CONT_DATE_FIN" class="form-control" />
+                <span asp-validation-for="CONT_DATE_FIN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_VAL_NOURRITURE" class="control-label"></label>
+                <input asp-for="CONT_VAL_NOURRITURE" class="form-control" />
+                <span asp-validation-for="CONT_VAL_NOURRITURE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_VAL_LOGEMENT" class="control-label"></label>
+                <input asp-for="CONT_VAL_LOGEMENT" class="form-control" />
+                <span asp-validation-for="CONT_VAL_LOGEMENT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_DATE_RESILIATION" class="control-label"></label>
+                <input asp-for="CONT_DATE_RESILIATION" class="form-control" />
+                <span asp-validation-for="CONT_DATE_RESILIATION" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_CODE_ACT" class="control-label"></label>
+                <input asp-for="CONT_CODE_ACT" class="form-control" />
+                <span asp-validation-for="CONT_CODE_ACT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_CODE_CAS_SOC" class="control-label"></label>
+                <input asp-for="CONT_CODE_CAS_SOC" class="form-control" />
+                <span asp-validation-for="CONT_CODE_CAS_SOC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_CODE_DELEG" class="control-label"></label>
+                <input asp-for="CONT_CODE_DELEG" class="form-control" />
+                <span asp-validation-for="CONT_CODE_DELEG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_CODE_SIT_MAT" class="control-label"></label>
+                <input asp-for="CONT_CODE_SIT_MAT" class="form-control" />
+                <span asp-validation-for="CONT_CODE_SIT_MAT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_DATE_SAISIE" class="control-label"></label>
+                <input asp-for="CONT_DATE_SAISIE" class="form-control" />
+                <span asp-validation-for="CONT_DATE_SAISIE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_OBS" class="control-label"></label>
+                <input asp-for="CONT_OBS" class="form-control" />
+                <span asp-validation-for="CONT_OBS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_SALAIRE" class="control-label"></label>
+                <input asp-for="CONT_SALAIRE" class="form-control" />
+                <span asp-validation-for="CONT_SALAIRE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_CARTE_SEJOUR" class="control-label"></label>
+                <input asp-for="CONT_CARTE_SEJOUR" class="form-control" />
+                <span asp-validation-for="CONT_CARTE_SEJOUR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_EST_RESILIE" class="control-label"></label>
+                <input asp-for="CONT_EST_RESILIE" class="form-control" />
+                <span asp-validation-for="CONT_EST_RESILIE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DATE_LIVRAISON" class="control-label"></label>
+                <input asp-for="DATE_LIVRAISON" class="form-control" />
+                <span asp-validation-for="DATE_LIVRAISON" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_DATE_ENVOI_DR" class="control-label"></label>
+                <input asp-for="CONT_DATE_ENVOI_DR" class="form-control" />
+                <span asp-validation-for="CONT_DATE_ENVOI_DR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_UPDATE" class="control-label"></label>
+                <input asp-for="CONT_UPDATE" class="form-control" />
+                <span asp-validation-for="CONT_UPDATE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_PERSONNE" class="control-label"></label>
+                <input asp-for="CONT_PERSONNE" class="form-control" />
+                <span asp-validation-for="CONT_PERSONNE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_PERSONNE_L" class="control-label"></label>
+                <input asp-for="CONT_PERSONNE_L" class="form-control" />
+                <span asp-validation-for="CONT_PERSONNE_L" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_PASSEPORT" class="control-label"></label>
+                <input asp-for="CONT_PASSEPORT" class="form-control" />
+                <span asp-validation-for="CONT_PASSEPORT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_NATIONALITE" class="control-label"></label>
+                <input asp-for="CONT_NATIONALITE" class="form-control" />
+                <span asp-validation-for="CONT_NATIONALITE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_NATIONALITE_L" class="control-label"></label>
+                <input asp-for="CONT_NATIONALITE_L" class="form-control" />
+                <span asp-validation-for="CONT_NATIONALITE_L" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_FONCTION" class="control-label"></label>
+                <input asp-for="CONT_FONCTION" class="form-control" />
+                <span asp-validation-for="CONT_FONCTION" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_FONCTION_L" class="control-label"></label>
+                <input asp-for="CONT_FONCTION_L" class="form-control" />
+                <span asp-validation-for="CONT_FONCTION_L" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_CODE_ENT" class="control-label"></label>
+                <input asp-for="CONT_CODE_ENT" class="form-control" />
+                <span asp-validation-for="CONT_CODE_ENT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_CAT_ENT" class="control-label"></label>
+                <input asp-for="CONT_CAT_ENT" class="form-control" />
+                <span asp-validation-for="CONT_CAT_ENT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_EMPLOYEUR" class="control-label"></label>
+                <input asp-for="CONT_EMPLOYEUR" class="form-control" />
+                <span asp-validation-for="CONT_EMPLOYEUR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_EMPLOYEUR_L" class="control-label"></label>
+                <input asp-for="CONT_EMPLOYEUR_L" class="form-control" />
+                <span asp-validation-for="CONT_EMPLOYEUR_L" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_EMPLOYEUR_ADR" class="control-label"></label>
+                <input asp-for="CONT_EMPLOYEUR_ADR" class="form-control" />
+                <span asp-validation-for="CONT_EMPLOYEUR_ADR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_EMPLOYEUR_ADR_L" class="control-label"></label>
+                <input asp-for="CONT_EMPLOYEUR_ADR_L" class="form-control" />
+                <span asp-validation-for="CONT_EMPLOYEUR_ADR_L" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_NUM_CNSS" class="control-label"></label>
+                <input asp-for="CONT_NUM_CNSS" class="form-control" />
+                <span asp-validation-for="CONT_NUM_CNSS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_ACTIVITE" class="control-label"></label>
+                <input asp-for="CONT_ACTIVITE" class="form-control" />
+                <span asp-validation-for="CONT_ACTIVITE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_SIGNER" class="control-label"></label>
+                <input asp-for="CONT_SIGNER" class="form-control" />
+                <span asp-validation-for="CONT_SIGNER" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_SIGNER_L" class="control-label"></label>
+                <input asp-for="CONT_SIGNER_L" class="form-control" />
+                <span asp-validation-for="CONT_SIGNER_L" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_QRCODE_FR" class="control-label"></label>
+                <input asp-for="CONT_QRCODE_FR" class="form-control" />
+                <span asp-validation-for="CONT_QRCODE_FR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_QRCODE_AR" class="control-label"></label>
+                <input asp-for="CONT_QRCODE_AR" class="form-control" />
+                <span asp-validation-for="CONT_QRCODE_AR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_CODE_PERS" class="control-label"></label>
+                <input asp-for="CONT_CODE_PERS" class="form-control" />
+                <span asp-validation-for="CONT_CODE_PERS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_ETAT_PAIE" class="control-label"></label>
+                <input asp-for="CONT_ETAT_PAIE" class="form-control" />
+                <span asp-validation-for="CONT_ETAT_PAIE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_MODE_PAIE" class="control-label"></label>
+                <input asp-for="CONT_MODE_PAIE" class="form-control" />
+                <span asp-validation-for="CONT_MODE_PAIE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_REF_PAIE" class="control-label"></label>
+                <input asp-for="CONT_REF_PAIE" class="form-control" />
+                <span asp-validation-for="CONT_REF_PAIE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_DATE_PAIE" class="control-label"></label>
+                <input asp-for="CONT_DATE_PAIE" class="form-control" />
+                <span asp-validation-for="CONT_DATE_PAIE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="synched" class="control-label"></label>
+                <input asp-for="synched" class="form-control" />
+                <span asp-validation-for="synched" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_CREATED_BY" class="control-label"></label>
+                <input asp-for="CONT_CREATED_BY" class="form-control" />
+                <span asp-validation-for="CONT_CREATED_BY" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_ACTIVITE_L" class="control-label"></label>
+                <input asp-for="CONT_ACTIVITE_L" class="form-control" />
+                <span asp-validation-for="CONT_ACTIVITE_L" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONT_UPDATED_BY" class="control-label"></label>
+                <input asp-for="CONT_UPDATED_BY" class="form-control" />
+                <span asp-validation-for="CONT_UPDATED_BY" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

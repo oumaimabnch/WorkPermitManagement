@@ -1,0 +1,327 @@
+﻿@model WorkPermitManagement.Models.WorkPermit
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>WorkPermit</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CODE_CONT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CODE_CONT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CODE_DEM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CODE_DEM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CODE_REGIME)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CODE_REGIME)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CODE_AVANT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CODE_AVANT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_CODE_CONTRAT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_CODE_CONTRAT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_NATURE_CONTRAT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_NATURE_CONTRAT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_DATE_DEBUT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_DATE_DEBUT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_DATE_FIN)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_DATE_FIN)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_VAL_NOURRITURE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_VAL_NOURRITURE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_VAL_LOGEMENT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_VAL_LOGEMENT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_DATE_RESILIATION)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_DATE_RESILIATION)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_CODE_ACT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_CODE_ACT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_CODE_CAS_SOC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_CODE_CAS_SOC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_CODE_DELEG)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_CODE_DELEG)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_CODE_SIT_MAT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_CODE_SIT_MAT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_DATE_SAISIE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_DATE_SAISIE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_OBS)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_OBS)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_SALAIRE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_SALAIRE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_CARTE_SEJOUR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_CARTE_SEJOUR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_EST_RESILIE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_EST_RESILIE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DATE_LIVRAISON)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DATE_LIVRAISON)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_DATE_ENVOI_DR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_DATE_ENVOI_DR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_UPDATE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_UPDATE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_PERSONNE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_PERSONNE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_PERSONNE_L)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_PERSONNE_L)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_PASSEPORT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_PASSEPORT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_NATIONALITE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_NATIONALITE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_NATIONALITE_L)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_NATIONALITE_L)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_FONCTION)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_FONCTION)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_FONCTION_L)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_FONCTION_L)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_CODE_ENT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_CODE_ENT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_CAT_ENT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_CAT_ENT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_EMPLOYEUR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_EMPLOYEUR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_EMPLOYEUR_L)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_EMPLOYEUR_L)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_EMPLOYEUR_ADR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_EMPLOYEUR_ADR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_EMPLOYEUR_ADR_L)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_EMPLOYEUR_ADR_L)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_NUM_CNSS)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_NUM_CNSS)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_ACTIVITE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_ACTIVITE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_SIGNER)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_SIGNER)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_SIGNER_L)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_SIGNER_L)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_QRCODE_FR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_QRCODE_FR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_QRCODE_AR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_QRCODE_AR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_CODE_PERS)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_CODE_PERS)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_ETAT_PAIE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_ETAT_PAIE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_MODE_PAIE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_MODE_PAIE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_REF_PAIE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_REF_PAIE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_DATE_PAIE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_DATE_PAIE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.synched)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.synched)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_CREATED_BY)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_CREATED_BY)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_ACTIVITE_L)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_ACTIVITE_L)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONT_UPDATED_BY)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONT_UPDATED_BY)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
